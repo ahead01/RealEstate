@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="connection.url">jdbc:mysql://localhost:3306/RealEstate</property>
+        <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+        <mapping class="RealEstate.entities.AmenityEntity"/>
+        <mapping class="RealEstate.entities.ApplicantEntity"/>
+        <mapping class="RealEstate.entities.ApplicantAppliesForPropertyEntity"/>
+        <mapping class="RealEstate.entities.DependentEntity"/>
+        <mapping class="RealEstate.entities.DependentLivesWithTennantEntity"/>
+        <mapping class="RealEstate.entities.EmployeeEntity"/>
+        <mapping class="RealEstate.entities.EmployeeWorksAtPropertyEntity"/>
+        <mapping class="RealEstate.entities.ExpenseEntity"/>
+        <mapping class="RealEstate.entities.ProperttyNeedsRepairEntity"/>
+        <mapping class="RealEstate.entities.PropertyEntity"/>
+        <mapping class="RealEstate.entities.PropertyHasAmenityEntity"/>
+        <mapping class="RealEstate.entities.PropertyHasExpenseEntity"/>
+        <mapping class="RealEstate.entities.RepairEntity"/>
+        <mapping class="RealEstate.entities.SellerEntity"/>
+        <mapping class="RealEstate.entities.SellerSellsPropertyEntity"/>
+        <mapping class="RealEstate.entities.TennantEntity"/>
+        <!-- <property name="connection.username"/> -->
+        <!-- <property name="connection.password"/> -->
+
+        <!-- DB schema will be updated if needed -->
+        <!-- <property name="hbm2ddl.auto">update</property> -->
+    </session-factory>
+</hibernate-configuration>
